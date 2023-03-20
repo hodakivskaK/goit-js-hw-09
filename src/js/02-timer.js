@@ -24,7 +24,6 @@ const options = {
 flatpickr(datetimePickerEl, options);
 
 
-
 startButtonEl.addEventListener('click', () => {
   const selectedDate = datetimePickerEl.value;
   const currentDate = new Date();
