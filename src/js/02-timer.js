@@ -32,8 +32,11 @@ startButtonEl.addEventListener('click', () => {
 
   if (endDate < currentDate) {
     window.alert('Please choose a date in the future');
+    startButtonEl.setAttribute("disabled", true);
     return;
   }
+
+  startButtonEl.setAttribute("disabled", false);
 
   const timeDifferent = endDate - currentDate;
   const time = convertMs(timeDifferent);
